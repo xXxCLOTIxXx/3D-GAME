@@ -18,7 +18,7 @@ class Sprite:
             }
         }
         self.objects_list=[
-            #SpriteObjects(self.sprite_parameters['sprite'], (7.1, 2.1))
+            #SpriteObjects(self.sprite_parameters['sprite'], (10, 10))
         ]
 
 
@@ -28,7 +28,7 @@ class SpriteObjects:
     def __init__(self, sprite_parameters, pos):
         self.object = sprite_parameters['sprite']
         self.static = sprite_parameters['static']
-        self.x, self.y = pos[0] * config.TILE, pos[1] * config.TILE
+        self.x, self.y = pos[0], pos[1]
         self.shift = sprite_parameters['shift']
         self.scale = sprite_parameters['scale']
         self.animation = sprite_parameters['animation']
